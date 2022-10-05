@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap');
+.card {
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+	background-color: #f0f0f067;
+	height:28em;
+	width: 270px;
+	display:-webkit-box;
+	display:-ms-flexbox;
+
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:column;
+	flex-direction:column;
+	position:relative;
+	-webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+	-o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+	transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+	border-radius:65px;
+	overflow:hidden;
+
+
+
+	
+}
+
+.card:hover{
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+	/* background-color: #14eb1f46; */
+	background-color: rgba(255, 166, 0, 0.274);
+
+
+  	display:-webkit-box;
+  	display:-ms-flexbox;
+  	-webkit-box-orient:vertical;
+  	-webkit-box-direction:normal;
+  	-ms-flex-direction:column;
+ 	flex-direction:column;
+  	position:relative;
+ 	-webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+ 	-o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  	transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+ 	border-radius:65px;
+  	overflow:hidden;
+	
+  	-webkit-box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+ 	box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+  	
+}
+
+.stylesImage{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	overflow: hidden;
+	/* background-image: url('waiti.png') ; */
+}
+
+.fontCard{
+	font-family: 'Reem Kufi Ink', sans-serif;
+	/* background-image: radial-gradient(circle, #cee3d2, #b3dccf, #96d4d4, #7ecadc, #73bee5, #6fbfeb, #6bbff2, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); */
+	background-image: radial-gradient(circle, #ebeed3, #e6ecb7, #e1ea9a, #dce87b, #d7e55a, #dddc48, #e3d434, #e9ca1e, #f5b92e, #fca93f, #fe9b50, #fb8e5f);
+	/* color: #363838a8; */
+	color: #4a4b05c2;
+}
+
+
+.fontTemperament{
+	
+	font-family: 'Reem Kufi Ink', sans-serif;
+	/* color: rgb(74, 77, 78); */
+	color: #4b3811;
+	font-size: 95%;
+	margin: 3px;
+}

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Combo&display=swap');
+.background{
+  background-image: url('1261175.png');
+ 
+  background-size: cover;
+  position: absolute;
+
+  text-align: center;
+  background-position-x: center;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.boxCard{
+    margin-bottom: 60%;
+    margin-left: 33%;
+    margin-top: 0%;
+    background: rgba(53, 49, 46, 0.568);
+    border-radius: 10px;
+    border: 1px solid #666666;
+    width: 50%;
+    height: 10%;
+    font-weight:bold; 
+    font-family: 'Montserrat', sans-serif;
+    width: 500px;
+    overflow:auto;
+    height: auto;
+ 
+  
+}
+
+.imgCard{
+    border-radius: 55px;
+    height: 200px;
+    width: 250px;  
+    margin-left: 1%;
+ 
+}
+
+.font{
+    font-family: 'Combo', cursive;
+  text-align: center;
+    color: #f0eeebe3;
+
+}
+
+.fontName{
+    font-family: 'Combo', cursive;
+    font-size: 30px;
+    margin: 1%;
+    color: #d9daddef;
+}
+.backHome{ 
+    margin-right: 84%;
+    font-family: 'Combo', cursive;
+    border:1px solid #ada9a9;
+    font-size: 19px;
+
+    border-radius:60%;
+    border: 1px solid #2c231d;
+    background: #4137257a;
+    color: #f1ebeb9f;
+    border-radius: 22px;
+    -webkit-box-shadow: #ffa0a094 0px 0px 40px 0px;
+    -moz-box-shadow: #ffa0a05e 0px 0px 40px 0px;
+    box-shadow: #ffa0a093 0px 0px 40px 0px;
+    text-shadow: #734343 1px 1px 1px;
+    width:60px;
+    height: 40px;
+    
+}
+
+
+.backHome:hover,
+.backHome:focus {
+    background: linear-gradient(to bottom, #e4ce52, #be773c);
+    color: rgb(184, 34, 34);
+    text-decoration: none;
+    }
+
+    .buttonStyle{
+        margin-left: 610%;
+     
+        font-family: 'Combo', cursive;
+        border:1px solid #ada9a9;
+        font-size: 19px;
+        height: 40px;
+        border-radius:60%;
+        border: 1px solid #2c231d;
+        background: #4137257a;
+        color: #f1ebeb9f;
+        border-radius: 22px;
+        -webkit-box-shadow: #ffa0a094 0px 0px 40px 0px;
+        -moz-box-shadow: #ffa0a05e 0px 0px 40px 0px;
+        box-shadow: #ffa0a093 0px 0px 40px 0px;
+        text-shadow: #734343 1px 1px 1px;
+        width:60px;
+    }
+
+    .buttonStyle:hover,
+.buttonStyle:focus {
+    background: linear-gradient(to bottom, #e4ce52, #be773c);
+    color: rgb(184, 34, 34);
+    text-decoration: none;
+    }
+
+
+    .buttonsDiv{
+        flex-direction: row;
+        display: flex;
+        margin: 2%;
+    }

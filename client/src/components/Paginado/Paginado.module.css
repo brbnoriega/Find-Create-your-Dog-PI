@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Combo&display=swap');
+.arrow{
+    margin: 5px;
+    color: rgba(72, 72, 73, 0.658);
+    -webkit-box-shadow: #ebe4e094 0px 0px 40px 0px;
+    -moz-box-shadow: #ebe1d95e 0px 0px 40px 0px;
+    
+ background-color: rgba(248, 245, 245, 0.692);
+    border-color: rgb(158, 156, 156);
+    font-family: 'Combo', cursive;
+    border-radius: 33%;
+ }
+
+ .arrow:hover{
+    
+    border: 1px solid #f3efed77;
+    background: #f7f2ef77;
+    /* background-image: linear-gradient(to top, #cee3d2, #b3dccf, #96d4d4, #7ecadc, #73bee5, #6fbfeb, #6bbff2, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); */
+    background-image: radial-gradient(circle, #ebeed3, #e6ecb7, #e1ea9a, #dce87b, #d7e55a, #dddc48, #e3d434, #e9ca1e, #f5b92e, #fca93f, #fe9b50, #fb8e5f);
+    color: #0c0b0a;
+    text-decoration: none;
+}
+ 
+.pagActual{
+   border: 1px solid #f3efed77;
+    background: #f7f2ef77;
+    margin: 1px;
+    /* background-image: linear-gradient(to top, #cee3d2, #b3dccf, #96d4d4, #7ecadc, #73bee5, #6fbfeb, #6bbff2, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); */
+    background-image: radial-gradient(circle, #ebeed3, #e6ecb7, #e1ea9a, #dce87b, #d7e55a, #dddc48, #e3d434, #e9ca1e, #f5b92e, #fca93f, #fe9b50, #fb8e5f);
+    color: #0c0b0a;
+    width: 28px;
+    font-family: 'Combo', cursive;
+    border-radius:30%;
+    text-decoration: none;
+}
+
+.pagOther{
+   font-family: 'Combo', cursive;
+font-size: 15px;
+color: #594c04;
+    /* background-image: linear-gradient(to top, #cee3d2, #b3dccf, #96d4d4, #7ecadc, #73bee5, #6fbfeb, #6bbff2, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); */
+   margin: 1px;
+   border-radius:30%;
+border-color: #d7e55a;
+    width: 28px;
+  
+}
