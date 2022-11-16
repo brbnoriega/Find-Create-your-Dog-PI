@@ -27,7 +27,7 @@ const { conn } = require('./src/db.js');
 //   });
 // });
 
-conn.sync({ force: true }).then(() => {
+conn.sync({ force: false }).then(() => {
   server.listen(process.env.PGPORT, () => {
     console.log(process.env.PGPORT); // eslint-disable-line no-console
   });
