@@ -8,7 +8,7 @@ const dotenv = require("dotenv");
 
 require('./db.js');
 const server = express();
-const cors = require("cors");
+// const cors = require("cors");
 dotenv.config();
 
 server.name = "API";
