@@ -3,23 +3,23 @@ const { Sequelize } = require('sequelize');
 const fs = require('fs');
 const path = require('path');
 const {
-  DB_USER, DB_PASSWORD, DB_HOST, DB_NAME
+  PGPASSWORD,
+  PGHOST,
+  PGDATABASE,
+  PGUSER,
+  PGPORT,
+ 
 } = process.env;
-
-// const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/dogs`, {
-//   logging: false, // set to console.log to see the raw SQL queries
-//   native: false, // lets Sequelize know we can use pg-native for ~30% more speed
-// });
 
 let sequelize =
   process.env.NODE_ENV === "production"
     ? new Sequelize({
-        database: DB_NAME,
+        database: PGDATABASE,
         dialect: "postgres",
-        host: DB_HOST,
-        port: 5432,
-        username: DB_USER,
-        password: DB_PASSWORD,
+        host: PGHOST,
+        port: PGPORT,
+        username: PGUSER,
+        password: PGPASSWORD,
         pool: {
           max: 3,
           min: 1,
@@ -36,12 +36,21 @@ let sequelize =
         ssl: true,
       })
     : new Sequelize(
-        `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/dogs`,
+        `postgres://${PGHOST}:${PGPASSWORD}@${PGHOST}/dog`,
         { logging: false, native: false }
       );
+// const sequelize = new Sequelize(DATABASE_URL, {
+//   logging: false, // set to console.log to see the raw SQL queries
+//   native: false, // lets Sequelize know we can use pg-native for ~30% more speed
 
-
-//-----------------
+//   //configuracion adicional para deploy <---back:
+//   dialectOptions:{
+//     ssl:{
+//       require: true,
+//       rejectUnauthorized: false
+//     }
+//   },
+// });
 const basename = path.basename(__filename);
 
 const modelDefiners = [];
@@ -76,3 +85,4 @@ module.exports = {
   ...sequelize.models, // para poder importar los modelos así: const { Product, User } = require('./db.js');
   conn: sequelize,     // para importart la conexión { conn } = require('./db.js');
 };
+
