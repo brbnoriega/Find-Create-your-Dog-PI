@@ -36,7 +36,8 @@ let sequelize =
         ssl: true,
       })
     : new Sequelize(
-        `postgres://${PGHOST}:${PGPASSWORD}@${PGHOST}/dog`,
+        `postgres://${PGUSER}:${PGPASSWORD}@${PGHOST}/dog`,
+  
         { logging: false, native: false }
       );
 // const sequelize = new Sequelize(DATABASE_URL, {
